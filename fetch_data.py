@@ -8,4 +8,4 @@ FILES = [
 
 s3 = boto3.client('s3')
 for filename in FILES:
-    s3.download_file('wgb-s3', filename, filename)
+    s3.download_file('wgb-s3', filename, f"./assets/{filename}")
