@@ -35,5 +35,5 @@ jobs:
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
         git config --global user.name "GitHub Actions"
-        git add results.json daily_wordle.json daily_connections.json
+        git add ./assets/results.json ./assets/daily_wordle.json ./assets/daily_connections.json
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update JSON files" && git push)
