@@ -40,3 +40,6 @@ jobs:
         git add .
         git commit -m "Update JSON files" || exit 0
         git push https://x-access-token:${GH_PAT}@github.com/wordgamebench/wordgamebench.github.io.git HEAD:main
+
+
+
