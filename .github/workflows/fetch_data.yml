@@ -2,6 +2,9 @@ name: Fetch and Update JSON Files
 
 on:
   workflow_dispatch:  # Allows manual triggering
+  push:
+    branches:
+      - main
 
 jobs:
   update-json-files:
